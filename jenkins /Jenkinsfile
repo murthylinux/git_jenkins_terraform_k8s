@@ -9,7 +9,7 @@ pipeline {
         stage('Checkout SCM'){
             steps{
                 script{
-                    checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'git@github.com:murthylinux/git_jenkins_terraform_k8s.git']])
+                    checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/murthylinux/git_jenkins_terraform_k8s.git']])
                 }
             }
         }
